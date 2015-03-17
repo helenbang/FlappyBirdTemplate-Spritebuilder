@@ -23,7 +23,9 @@
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event{
     // this will get called every time the player touches the screen (a part of the Cocos2D game engine)
     [character flap];
-    // calls the flap method 
+    // calls the flap method
+    
+    [self addObstacle];
 }
 
 @end
