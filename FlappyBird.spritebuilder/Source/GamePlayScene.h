@@ -18,6 +18,11 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 @interface GamePlayScene : CCNode <CCPhysicsCollisionDelegate>
 {
     // define variables here;
+    Character* character;
+    CCPhysicsNode* physicsNode; // reference a node that simulates physics
+    // node: single unit in a hierarchy
+    // node hierarchy keeps track of which nodes influence other nodes
+    // parent node has child nodes ... -> kind of like inheritance
 }
 
 -(void) initialize;
